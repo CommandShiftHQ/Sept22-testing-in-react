@@ -6,14 +6,18 @@ Here we will using Jest, React testing library and React test renderer to add te
 - create snapshots
 - use valid props for test objects
 - fetch elements using queries
-- validate elements onn screen using matchers
+- validate elements on screen using matchers
 - mock functions with Jest
 - validate functions are being called when triggering an event listener
 
 ## Setup
-*This repo is intended as a guide for a tutor when giving the lecture*
+Clone down the repo, and `cd` and into the new directory. If you want to start from the same place as we did at the start of the lecture, simply run `npm i` then `npm start`
 
-The `main` branch contains the basic application, this can be forked and used as the base for a fresh repo created over the course of a lecture for the students to use when following along with the video recording.
+If you want to see the finished app as it was at the end of the session, you will need to checkout the `complete` branch on this repo. You can do that by running
+```
+git checkout -t origin/complete
+```
+which will pull down the completed branch to your local environment (you will have to run `npm i` to update the new dependencies)
 
 ## Starting point of app
 ![Screenshot](./public/screenshot-react-intro-2.png)
