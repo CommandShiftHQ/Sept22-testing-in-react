@@ -25,5 +25,14 @@ describe("Post", () => {
     expect(rendered).toMatchSnapshot()
   })
 
+  test("Assert the post author is present", () => {
+    render(
+      <Post
+        postData={validProps.postData}
+        handleUpvote={validProps.handleUpvote}
+      />
+    );
 
+    expect(screen.getByText("Author: test author")).toBeInTheDocument();
+  })
 })
